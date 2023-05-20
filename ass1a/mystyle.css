@@ -1,0 +1,251 @@
+body{
+    max-width: 100%;
+    /* background-color: rgb(144, 128, 128); */
+    /* overflow-x: hidden; */
+    box-sizing: border-box;
+    background-image: url('./bg1.jpeg');
+
+}
+
+body::before {
+    content: "";
+    /* display: block; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('./bg1.jpeg');
+    background-size: cover;
+    opacity: 0.3;
+    z-index: -1;
+  }
+
+
+
+  
+header{
+    height: 70px;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    /* background-color: wheat; */
+    /* z-index: 100; */
+}
+
+.logosec{
+    height: 42px;
+}
+
+.searchbar{
+    height: 42px;
+    transition: box-shadow 0.5s;
+}
+
+.message{
+    height: 42px;
+    width: 50px;
+    background-image: linear-gradient(lightgreen, lightblue);
+    margin-left: 10px;
+}
+
+.logosec img{
+    cursor: pointer;
+    height: 42px;
+    width: 100px;
+    object-fit: contain;
+}
+
+.searchbar input{
+    width: 400px;
+    height: 42px;
+    border-radius: 5px;
+    border: solid;
+    border-color: black;
+    max-width: 400px;
+    box-shadow: 0px 0px 5px 2px rgb(19, 18, 18);
+}
+.searchbar input::placeholder{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+}
+
+.searchbar:hover{
+    box-shadow: 0px 0px 6px 2px rgb(251, 247, 247);
+}
+
+.message img{
+    height: 42px;
+    width: 50px;
+    object-fit: contain;
+    border-radius: 50%;
+    background-blend-mode: lighten;
+}
+
+
+/* body sectio */
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+.dashboard{
+    /* background-color: rgb(238, 194, 194); */
+    flex: 1;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container{
+    /* background-color: blue; */
+    flex: 4;
+    padding: 5px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.stats{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.card{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 2px black;
+    /* background-color: rgb(104, 104, 140); */
+    transition: box-shadow 0.5s;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 5px 2px rgb(240, 239, 239);
+}
+
+.card p{
+    font-size:20px;
+    color: white;
+    text-align: center;
+}
+
+.num p{
+    font-size:30px;
+    color: white;
+    text-align: center;
+}
+
+.outer-card{
+    border: solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 2px black;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    transition: box-shadow 0.5s;
+}
+
+.outer-card:hover{
+    box-shadow: 0px 0px 20px 2px rgb(250, 247, 247);
+}
+
+
+.hori-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    font-size:20px;
+    color: rgb(32, 28, 28);
+    text-align: center;
+    transition: box-shadow 0.5s;
+    border-radius: 10px;
+}
+
+.hori-card:hover{
+    box-shadow: 0px 0px 20px 2px rgb(42, 41, 41);
+}
+
+
+
+
+
+.details{
+    /* background-color: rgb(192, 155, 230); */
+}
+
+
+.dashboard{
+  
+}
+
+.dashboard ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 2px;
+    list-style: none;
+    height: 100%;
+}
+
+.dashboard li{
+    /* border: solid; */
+    width: 100%;
+}
+
+.dashboard a{
+    text-decoration: none;
+    color: rgb(251, 248, 248);
+    font-size: 20px;
+    transition: text-decoration 0.5s ease;
+}
+
+.dashboard a:hover{
+    text-decoration-line: underline;
+    text-decoration-color:  red;
+}
+
+
+@media screen and (max-width:700px){
+    .logosec{
+        background-color: aqua;
+    }
+
+    .searchbar input{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .logosec img{
+        width: 50px;
+    }
+
+    .searchbar input{
+        width: 200px;
+    }
+    .message{
+        /* width: 30px;
+        height: 30px; */
+        width: 25px;
+    }
+    .message img{
+        width: 100%;
+    }
+}

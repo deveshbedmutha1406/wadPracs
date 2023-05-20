@@ -1,0 +1,6 @@
+ps1/node_modules
+.env
+ass2c
+ass1b/node_app/node_modules
+ass1b/node_app2/node_modules
+.DS_Store
