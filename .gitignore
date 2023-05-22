@@ -4,3 +4,9 @@ ass2c
 ass1b/node_app/node_modules
 ass1b/node_app2/node_modules
 .DS_Store
+ps4_angular
+ps4_new/myapp/.*
+ps4_new/myapp/node_modules
+static_app/node_modules
+music_node_app/node_modules
+music_node_app/.env
